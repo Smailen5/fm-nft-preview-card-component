@@ -13,17 +13,17 @@ Nessun package manager, nessuna dipendenza, nessun build step. Apri `index.html`
 | ---------------- | ------------------------------------------------------------ |
 | `style-guide.md` | Colori HSL, font, dimensioni layout del challenge originale. |
 
-## Debito tecnico (dal DNA)
+## Debito tecnico
 
-| Criticità                               | Dove                                                 | Fix proposto                                                              |
-| --------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------- |
-| Overlay hover via JS con event listener | `index.html` script + classi `.img-active`/`.active` | Sostituire con CSS `:hover` + `opacity`/`transition`                      |
-| Centratura icona: `margin: 41%`         | `style.css` `.icon-view`                             | Flexbox su `.img-active` (`justify-content: center; align-items: center`) |
-| Dimensioni card fisse (250×430px)       | `style.css` `.card-bg`                               | `max-width` + media query (375px/1440px style-guide)                      |
-| `console.log` di debug                  | `index.html` script                                  | Rimuovere                                                                 |
-| Variabili poco descrittive              | `element`, `imgActive` nel JS                        | Rinominare                                                                |
-| Colori duplicati in chiaro              | `style.css`                                          | Variabili CSS `:root`                                                     |
-| `<h3>` per titolo principale card       | `index.html`                                         | Valutare `<h1>` (pagina standalone)                                       |
+| #  | Criticità                               | Dove                                                 | Fix proposto                                                              |
+| -- | --------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------- |
+| #2 | Overlay hover via JS con event listener | `index.html` script + classi `.img-active`/`.active` | Sostituire con CSS `:hover` + `opacity`/`transition`                      |
+| #3 | Centratura icona: `margin: 41%`         | `style.css` `.icon-view`                             | Flexbox su `.img-active` (`justify-content: center; align-items: center`) |
+| #4 | Dimensioni card fisse (250×430px)       | `style.css` `.card-bg`                               | `max-width` + media query (375px/1440px style-guide)                      |
+| #5 | `console.log` di debug                  | `index.html` script                                  | Rimuovere                                                                 |
+| #6 | Variabili poco descrittive              | `element`, `imgActive` nel JS                        | Rinominare                                                                |
+| #7 | Colori duplicati in chiaro              | `style.css`                                          | Variabili CSS `:root`                                                     |
+| #8 | `<h3>` per titolo principale card       | `index.html`                                         | Valutare `<h1>` (pagina standalone)                                       |
 
 ## Git workflow
 
