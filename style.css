@@ -105,29 +105,29 @@ p {
 }
 
 /* ---------- Crediti ---------- */
-.tutto {
+.attribution {
   display: flex;
   height: 30px;
 }
 
-.tutto * {
+.attribution * {
   margin: 0;
 }
 
-.tutto .immagine img {
+.attribution .avatar-wrapper img {
   width: 30px;
   border-radius: 50%;
   border: 1px solid white;
 }
 
-.tutto .testo {
+.attribution .text {
   font-size: 0.75em;
   display: flex;
   align-items: center;
   margin: 0 0 0 10px;
 }
 
-.tutto .testo strong {
+.attribution .text strong {
   color: white;
 }
 
@@ -141,7 +141,7 @@ p {
 }
 
 /* ---------- Al passaggio del mouse ---------- */
-.tutto .testo strong:hover,
+.attribution .text strong:hover,
 h3:hover {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
