@@ -151,7 +151,7 @@ img:hover {
   cursor: pointer;
 }
 
-.img-active {
+.image-overlay {
   width: 220px;
   height: 220px;
   border-radius: 10px;
@@ -165,7 +165,7 @@ img:hover {
 .active {
   display: block;
 }
-.icon-view {
+.view-icon {
   width: 40px;
   margin: 41%;
 }
