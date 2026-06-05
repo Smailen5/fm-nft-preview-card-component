@@ -81,18 +81,18 @@
 
     <script>
       // Seleziona l'elemento da aggiungere la classe
-      let element = document.getElementById('img');
+      let nftImage = document.getElementById('img');
 
-      element.addEventListener('mouseover', function () {
-        // Aggiungi la classe all'elemento
-        let imgActive = document.querySelector('#my-element');
-        imgActive.classList.add('active');
+      nftImage.addEventListener('mouseover', function () {
+        // Aggiungi la classe all'overlay
+        let overlayElement = document.querySelector('#my-element');
+        overlayElement.classList.add('active');
       });
 
-      element.addEventListener('mouseout', function () {
-        // Rimuovi la classe dall'elemento
-        let imgActive = document.querySelector('#my-element');
-        imgActive.classList.remove('active');
+      nftImage.addEventListener('mouseout', function () {
+        // Rimuovi la classe dall'overlay
+        let overlayElement = document.querySelector('#my-element');
+        overlayElement.classList.remove('active');
       });
     </script>
   </body>
